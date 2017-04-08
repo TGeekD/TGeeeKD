@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddWarehouseController">
+   <children>
+      <ImageView fitHeight="129.0" fitWidth="939.0" pickOnBounds="true">
+         <image>
+            <Image url="@cargobannerwh.jpg" />
+         </image>
+      </ImageView>
+      <TabPane layoutY="129.0" prefHeight="487.0" prefWidth="940.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Recieve Orders">
+            <content>
+              <AnchorPane fx:id="addWarehouse" minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="940.0">
+                     <children>
+                        <ImageView fitHeight="461.0" fitWidth="939.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@backgroundwh.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="118.0" layoutY="60.0" prefHeight="339.0" prefWidth="704.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Dispatch Order">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="461.0" fitWidth="939.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@backgroundwh.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="122.0" layoutY="63.0" prefHeight="339.0" prefWidth="704.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text=" Damaged Goods">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="687.0">
+                     <children>
+                        <ImageView fitHeight="461.0" fitWidth="939.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@backgroundwh.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="292.0" layoutY="110.0" prefHeight="32.0" prefWidth="63.0" style="-fx-font-weight: bold; -fx-font-size: 15;" text="Order ID" />
+                        <Label alignment="TOP_RIGHT" layoutX="292.0" layoutY="170.0" prefHeight="32.0" prefWidth="63.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Note:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXTextArea layoutX="364.0" layoutY="170.0" maxWidth="354.0" minWidth="212.0" prefHeight="158.0" prefWidth="212.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Gate Pass">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="687.0">
+                     <children>
+                        <ImageView fitHeight="461.0" fitWidth="939.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@backgroundwh.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="277.0" layoutY="103.0" text="Order ID">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="277.0" layoutY="136.0" text="Weight">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField layoutX="363.0" layoutY="134.0" maxWidth="279.0" minWidth="138.0" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: #ffffff;" />
+                        <JFXButton layoutX="403.0" layoutY="181.0" style="-fx-background-color: #d39400;" text="Submit" />
+                        <ComboBox fx:id="gpCb" layoutX="363.0" layoutY="104.0" prefHeight="25.0" prefWidth="139.0" promptText="Select OrderID" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="34.0" fitWidth="81.0" layoutX="850.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logoutbtn.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
